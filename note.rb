@@ -5,20 +5,20 @@
 class Note < Formula
   desc "A modern TUI for note application"
   homepage "https://github.com/armand-sauzay/note"
-  version "0.1.3"
+  version "0.2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/armand-sauzay/note/releases/download/v0.1.3/note_0.1.3_darwin_amd64.tar.gz"
-      sha256 "c7db9604314c66f46ea44973cbc5e63fbfd5ea103e7cb3a27723c6e32076c119"
+      url "https://github.com/armand-sauzay/note/releases/download/v0.2.0/note_0.2.0_darwin_amd64.tar.gz"
+      sha256 "a010cb805ef0b7f19efbfebf73ec728391775d86727eede7ee15058fea630220"
 
       def install
         bin.install "note"
       end
     end
     on_arm do
-      url "https://github.com/armand-sauzay/note/releases/download/v0.1.3/note_0.1.3_darwin_arm64.tar.gz"
-      sha256 "70dbc8a53844e7255736a494623131c7ae496a1d5a366ff721de5166a79694fe"
+      url "https://github.com/armand-sauzay/note/releases/download/v0.2.0/note_0.2.0_darwin_arm64.tar.gz"
+      sha256 "14c78b5a78ceba32000de0e0ac9a65615796c1cfc1076045ed89e812cafc9bbf"
 
       def install
         bin.install "note"
@@ -29,8 +29,8 @@ class Note < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/armand-sauzay/note/releases/download/v0.1.3/note_0.1.3_linux_amd64.tar.gz"
-        sha256 "91a233889b7323a704373292e69917a4a9b45b2b6ea2bd7c97e78ff0f35ddaf8"
+        url "https://github.com/armand-sauzay/note/releases/download/v0.2.0/note_0.2.0_linux_amd64.tar.gz"
+        sha256 "e1f135171f456b3ad0f7c6d48de2288a6da3578a95247d1d75a6b27f4683a618"
 
         def install
           bin.install "note"
@@ -39,8 +39,8 @@ class Note < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/armand-sauzay/note/releases/download/v0.1.3/note_0.1.3_linux_arm64.tar.gz"
-        sha256 "2c69bbd40f37291e3b1ba8f28e8b7e95ae03e35c7ed631ee3a55e90564dc8926"
+        url "https://github.com/armand-sauzay/note/releases/download/v0.2.0/note_0.2.0_linux_arm64.tar.gz"
+        sha256 "7953e261e69cbff1f327d61783f30d1c6996af25fcf6af38afe8d5c2d818bb28"
 
         def install
           bin.install "note"
